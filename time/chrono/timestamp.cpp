@@ -22,6 +22,7 @@ int main() {
 		std::chrono::duration<double> diff = end - start;
 		std::cout <<"Time to fill and iterate a vector of " << std::setw(9)
 				<< size << "ints: " << diff.count() << " s\n";
+	
 	}
 
 	return 0;
