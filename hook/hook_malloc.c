@@ -32,6 +32,7 @@ void free(void *ptr) {
  
 int main() {
     // 通过dlsym找到标准库中的malloc和free的符号地址
+	
     sys_malloc = dlsym(RTLD_NEXT, "malloc");
     assert(dlerror() == NULL);
     sys_free = dlsym(RTLD_NEXT, "free");
